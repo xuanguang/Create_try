@@ -1,6 +1,7 @@
 def is_triangle(a, b, c):
     if (a <= 0) or (b <= 0) or (c <= 0):
         print("No")
+        return
     # min_stick = min(a,b,c)
     sticks = sorted([a, b, c])
     if (sticks[0] + sticks[1] > sticks[2]):
